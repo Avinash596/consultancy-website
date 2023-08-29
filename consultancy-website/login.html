@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction</title>
+  <style>
+    /* Internal CSS */
+    body {
+      background-color: #222;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+      color: #fff;
+      animation: moveInDown 1s ease-out;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #fff;
+      animation: moveInUp 1s ease-out;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+      animation: rotate 4s linear infinite;
+    }
+
+    .contact {
+      font-size: 18px;
+      margin-top: 30px;
+      color: #fff;
+      animation: moveInUp 1s ease-out;
+    }
+
+    @keyframes moveInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes moveInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/photo.jpg" alt="Under Construction" class="image">
+    <h1>Under Construction</h1>
+    <p>We apologize for the inconvenience.</p>
+    <p>The website is currently under construction and will be available soon.</p>
+    <p class="contact">For any inquiries, please contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+  </div>
+</body>
+
+</html>
